@@ -38,6 +38,6 @@ public class BirdController : MonoBehaviour
         void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, movementY, 0.0f);
-        rb.AddForce(movement * speed, ForceMode.Impulse);
+        rb.AddForce(movement * speed, ForceMode.Impulse); //git activities are a pain
     }
 }
