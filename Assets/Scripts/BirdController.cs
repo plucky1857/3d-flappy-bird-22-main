@@ -26,7 +26,7 @@ public class BirdController : MonoBehaviour
         jumpreset.y = 0f;
         rb.linearVelocity = jumpreset;
 
-        Vector3 jumpPower = new Vector3(0.0f, 3f, 0.0f);
+        Vector3 jumpPower = new Vector3(0.0f, 1f, 0.0f);
 
         rb.AddForce(jumpPower, ForceMode.Impulse);
     }
@@ -38,6 +38,6 @@ public class BirdController : MonoBehaviour
         void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, movementY, 0.0f);
-        rb.AddForce(movement * speed, ForceMode.Impulse); 
+        rb.AddForce(movement * speed, ForceMode.Impulse);
     }
 }
